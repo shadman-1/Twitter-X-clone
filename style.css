@@ -82,8 +82,9 @@ ul{
         top: 10px;
         left: 50%;
         transform: translateX(-50%);
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: bold;
+        color: #000; /* Adjust color as needed */
     }
 
     /* Premium button on the right side */
@@ -91,9 +92,9 @@ ul{
         position: absolute;
         top: 10px;
         right: 10px;
-        background-color: #1d9bf0; /* Twitter blue */
+        background-color: #6a4c9c; /* Violet color */
         color: white;
-        padding: 6px 12px;
+        padding: 8px 16px;
         border-radius: 20px;
         font-size: 0.875rem;
         font-weight: bold;
@@ -102,30 +103,42 @@ ul{
     }
 
     .premium-button:hover {
-        background-color: #1a8cd8;
+        background-color: #5a3f82;
     }
 
     /* Main content area */
-    .main-content {
+    .main-body {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 60px; /* Space for logo */
     }
 
-    /* Left sidebar layout (goes down below the main body on smaller screens) */
-    .left-sidebar {
+    /* Left sidebar layout (goes below the main body on smaller screens) */
+    .leftside-body {
         display: block;
         width: 100%;
         margin-top: 10px;
+        position: relative;
     }
 
-    /* Right sidebar (could be the tweet button, notifications, etc.) */
-    .right-sidebar {
-        display: block;
+    /* Icons inside the left sidebar - this part turns horizontal in smaller screens */
+    .leftside-body-icons {
+        display: flex;
+        justify-content: space-around;
         width: 100%;
-        margin-top: 10px;
+        margin-top: 15px;
+        padding: 10px 0;
     }
+
+    /* Left sidebar icon items */
+    .leftside-body-icons.icon {
+        margin: 0 10px;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+
+  
 
     /* Main body section (feed, tweets) */
     .feed {
@@ -133,15 +146,12 @@ ul{
         padding: 0 15px;
     }
 
-    /* Remove horizontal scroll and center elements */
-    body {
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    /* Adjust the feed for smaller screens */
+    .feed .tweet {
+        margin-bottom: 15px;
     }
 
-    /* Post button & other elements' adjustments */
+    /* Post button (fixed at bottom-right corner) */
     .post-button {
         position: fixed;
         bottom: 10px;
@@ -159,16 +169,15 @@ ul{
         background-color: #1a8cd8;
     }
 
-    /* Header/Footer alignment */
-    .header, .footer {
+
+    /* Remove horizontal scroll and center elements */
+    body {
+        overflow-x: hidden;
         display: flex;
-        justify-content: space-between;
-        width: 100%;
-        padding: 10px;
+        flex-direction: column;
+        align-items: center;
     }
 }
-
-
 
 
 /* --------- Tablet Layout (Between 768px - 1024px) --------- */
