@@ -73,46 +73,67 @@ ul{
   height: fit-content;
  }
 /* --------- Mobile Layout (Below 768px) --------- */
+
 @media (max-width: 768px) {
-  /* Center the X logo */
-  .header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 0;
-    width: 100%;
-    background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-  }
+    .header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .header img {
-    width: 40px; /* Adjust X logo size */
-    height: auto;
-  }
+    .logo {
+        text-align: center;
+        flex-grow: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
 
-  /* Hide left sidebar */
-  .leftside-body {
-    display: none;
-  }
+    .premium-button {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        padding: 5px 10px;
+        font-size: 12px;
+        border-radius: 20px;
+        background-color: #1D9BF0;
+    }
 
-  /* Main content takes full width */
-  .main-body {
-    width: 100%;
-    max-width: 600px;
-    margin: 50px auto; /* Push down to avoid overlapping header */
-    border-left: none;
-    border-right: none;
-  }
+    /* Sidebar styles for smaller screens */
+    .sidebar {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        position: relative;
+    }
 
-  /* Hide right sidebar */
-  .rightside-body {
-    display: none;
-  }
+    .sidebar-item {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .sidebar-item a {
+        display: block;
+        padding: 8px;
+        font-size: 16px;
+        text-decoration: none;
+        color: #333;
+    }
+
+    .sidebar-item a:hover {
+        background-color: #e8f5fe;
+        border-radius: 5px;
+    }
+    
+    /* Ensure the premium button remains fixed */
+    .premium-button {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
 }
+
+
 
 /* --------- Tablet Layout (Between 768px - 1024px) --------- */
 @media (max-width: 1024px) {
