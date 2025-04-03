@@ -74,6 +74,38 @@ ul{
  }
 /* --------- Mobile Layout (Below 768px) --------- */
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    text-align: center;
+    flex-grow: 1;
+}
+
+.premium-button {
+    background-color: #1D9BF0;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+
 @media (max-width: 768px) {
     .header {
         flex-direction: row;
