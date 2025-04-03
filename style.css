@@ -36,14 +36,15 @@ ul{
 }
 
 
-.main-body{
-  position:absolute;
-  width: 700px;
-  margin-left: 150px;
+.main-body {
+  position: relative;
+  width: 60%; /* Instead of fixed width */
+  max-width: 700px;
+  margin: 0 auto; /* Centers it */
   border-right: 1px solid rgba(102, 102, 102, 0.74);
   border-left: 1px solid rgba(102, 102, 102, 0.74);
-
 }
+
 
 .headline{
   font-weight: 700;
@@ -56,18 +57,34 @@ ul{
 }
 
 
-.rightside-body{
-  position: fixed;
+.rightside-body {
+  position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
-  margin-bottom: 20px;
-  margin-right: 70px;
-  margin-left: 0px;
+  right: 20px; /* Adjust margin */
+  width: 300px; /* Ensure proper width */
 }
+
 
 .cusBorder-2{
   border: 1px solid rgba(102, 102, 102, 0.74);
   border-radius:20px; 
   height: fit-content;
  }
+
+@media (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+  }
+
+  .main-body {
+    width: 100%; /* Take full width on smaller screens */
+    max-width: none;
+  }
+
+  .rightside-body {
+    position: relative; /* Allow it to move with the content */
+    width: 100%; /* Make it responsive */
+    margin: 20px auto;
+  }
+}
