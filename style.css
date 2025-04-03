@@ -84,15 +84,50 @@ ul{
     display: none; /* Hide on tablets */
   }
 
-
-  .fa-brands fa-x-twitter{
+    /* Tablet screens (max-width: 1024px) */
+  
+    /* Center the first icon (X logo) at the top */
+    .leftside-body ul .icon:first-child {
         position: absolute;
         top: 10px;
-        left: 200px;
+        left: 50%;
         transform: translateX(-50%);
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: #000; /* Adjust color as needed */
     }
+
+    /* Make the leftside body icons horizontal (except the first one) */
+    .leftside-body ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: #000; /* Adjust background as needed */
+        padding: 10px 0;
+        z-index: 1000;
+        box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.1);
+    }
+
+    /* Style each list item */
+    .leftside-body ul li {
+        list-style: none;
+        padding: 0 10px;
+    }
+
+    /* Adjust icon size and spacing */
+    .leftside-body ul li i {
+        font-size: 24px; /* Adjust size if needed */
+        color: white; /* Twitter X style */
+    }
+
+    /* Hide text labels under icons */
+    .leftside-body ul li span {
+        display: none;
+    }
+}
+
+  
 }
 
