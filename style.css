@@ -74,94 +74,59 @@ ul{
  }
 /* --------- Mobile Layout (Below 768px) --------- */
 
-body {
-    font-family: Arial, sans-serif;
-}
-
-.header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.logo {
-    text-align: center;
-    flex-grow: 1;
-}
-
-.premium-button {
-    background-color: #1D9BF0;
-    color: white;
-    padding: 5px 15px;
-    border-radius: 20px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.sidebar {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-}
-
-
+/* For screens 768px and smaller */
 @media (max-width: 768px) {
-    .header {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-    }
-
+    /* Center the logo and "Premium" button */
     .logo {
-        text-align: center;
-        flex-grow: 0;
-        margin-right: auto;
-        margin-left: auto;
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 
     .premium-button {
         position: absolute;
-        right: 10px;
-        top: 10px;
-        padding: 5px 10px;
-        font-size: 12px;
+        top: 20px;
+        right: 20px;
+        background-color: #1d9bf0; /* Twitter Blue */
+        color: white;
+        padding: 8px 16px;
         border-radius: 20px;
-        background-color: #1D9BF0;
+        font-size: 14px;
+        text-align: center;
     }
 
-    /* Sidebar styles for smaller screens */
+    /* Main content area */
+    .main-content {
+        margin-top: 80px; /* To give space for logo and premium button */
+        padding: 10px;
+    }
+
+    /* Sidebar becomes horizontal below the main content */
     .sidebar {
-        flex-direction: column;
+        display: block;
         width: 100%;
-        padding-top: 20px;
-        padding-bottom: 20px;
-        position: relative;
+        margin-top: 20px;
+        padding: 10px;
+        background-color: #f5f8fa; /* Light background for sidebar */
     }
 
     .sidebar-item {
-        margin: 10px 0;
+        display: inline-block;
+        margin-right: 20px;
         text-align: center;
+        padding: 10px;
     }
 
-    .sidebar-item a {
-        display: block;
-        padding: 8px;
-        font-size: 16px;
-        text-decoration: none;
-        color: #333;
-    }
-
-    .sidebar-item a:hover {
-        background-color: #e8f5fe;
-        border-radius: 5px;
+    /* Adjust other elements like tweet cards, trending section, etc. */
+    .tweet-card, .trending-section {
+        width: 100%;
+        margin-bottom: 20px;
     }
     
-    /* Ensure the premium button remains fixed */
-    .premium-button {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+    /* Ensure text doesn't overflow or crowd the screen */
+    .tweet-card p, .trending-section p {
+        word-wrap: break-word;
     }
 }
 
