@@ -84,7 +84,11 @@ ul{
     display: none; /* Hide on tablets */
   }
 
-  .logo {
+  .leftside-body {
+    display: none; /* Hide on tablets */
+  }
+
+  .logo{
         position: absolute;
         top: 10px;
         left: 90%;
