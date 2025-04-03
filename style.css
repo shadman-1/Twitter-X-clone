@@ -95,20 +95,7 @@ ul{
     }
 
     /* Make the leftside body icons horizontal (except the first one) */
-    .leftside-body ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        background-color: #000; /* Adjust background as needed */
-        padding: 10px 0;
-        z-index: 1000;
-        box-shadow: 0 -2px 5px rgba(255, 255, 255, 0.1);
-    }
+    
 
     /* Style each list item */
     .leftside-body ul li {
@@ -122,10 +109,7 @@ ul{
         color: white; /* Twitter X style */
     }
 
-    /* Hide text labels under icons */
-    .leftside-body ul li span {
-        display: none;
-    }
+   
 }
 
   
