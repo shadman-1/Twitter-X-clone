@@ -84,17 +84,6 @@ ul{
     display: none; /* Hide on tablets */
   }
 
-    /* Tablet screens (max-width: 1024px) */
-  
-    /* Center the first icon (X logo) at the top */
-    .leftside-body ul .icon:first-child {
-        position: absolute;
-        top: 10px;
-        left: 20%;
-        transform: translateX(-50%);
-    }
-
-
   
 }
 
