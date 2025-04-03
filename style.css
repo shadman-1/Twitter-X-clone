@@ -87,6 +87,7 @@ ul{
   .logo {
         position: absolute;
         top: 10px;
+        left: 90%;
         transform: translateX(-50%);
         font-size: 1.8rem;
         font-weight: bold;
