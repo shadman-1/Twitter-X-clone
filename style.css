@@ -90,7 +90,7 @@ ul{
     .leftside-body ul .icon:first-child {
         position: absolute;
         top: 10px;
-        left: 50%;
+        left: 20%;
         transform: translateX(-50%);
     }
 
