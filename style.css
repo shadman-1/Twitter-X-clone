@@ -97,13 +97,13 @@ ul{
     }
 
     /* Main content area */
-    .main-content {
+    .main-body {
         margin-top: 80px; /* To give space for logo and premium button */
         padding: 10px;
     }
 
     /* Sidebar becomes horizontal below the main content */
-    .sidebar {
+    .leftside-body{
         display: block;
         width: 100%;
         margin-top: 20px;
@@ -111,7 +111,7 @@ ul{
         background-color: #f5f8fa; /* Light background for sidebar */
     }
 
-    .sidebar-item {
+    .leftside-body{
         display: inline-block;
         margin-right: 20px;
         text-align: center;
