@@ -89,6 +89,7 @@ ul{
         position: absolute;
         top: 10px;
         left: 200px;
+        transform: translateX(-50%);
         font-size: 1.8rem;
         font-weight: bold;
         color: #000; /* Adjust color as needed */
