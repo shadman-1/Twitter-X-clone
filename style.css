@@ -94,21 +94,6 @@ ul{
         transform: translateX(-50%);
     }
 
-    /* Make the leftside body icons horizontal (except the first one) */
-    
-
-    /* Style each list item */
-    .leftside-body ul li {
-        list-style: none;
-        padding: 0 10px;
-    }
-
-    /* Adjust icon size and spacing */
-    .leftside-body ul li i {
-        font-size: 24px; /* Adjust size if needed */
-        color: white; /* Twitter X style */
-    }
-
 
   
 }
