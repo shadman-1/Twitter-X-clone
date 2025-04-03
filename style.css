@@ -84,11 +84,8 @@ ul{
     display: none; /* Hide on tablets */
   }
 
-  .leftside-body {
-    display: none; /* Hide on tablets */
-  }
 
-  ."fa-brands fa-x-twitter"{
+  .fa-brands fa-x-twitter{
         position: absolute;
         top: 10px;
         left: 50%;
